@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dental Hygiene & Overall Wellbeing</title>
+
+<style>
+body {
+    font-family: Poppins;
+    margin: 0;
+    background-color: #0a1f44;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1a2e5c; 
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    background-color: #16264f;
+    display: flex;
+    justify-content: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #0f1b3b;
+}
+
+section {
+    display: none;
+    padding: 30px;
+    max-width: 950px;
+    margin: auto;
+}
+
+section.active {
+    display: block;
+}
+
+.card {
+    background: #1a2e5c; 
+    padding: 22px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: #66ccff; 
+}
+
+h3 {
+    color: #99ccff; 
+}
+
+ul {
+    margin-left: 20px;
+}
+
+button.action {
+    background-color: #3399ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+button.action:hover {
+    background-color: #267acc;
+}
+
+footer {
+    background-color: #16264f;
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+}
+
+a {
+    color: #66ccff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.source-description {
+    font-size: 0.9em;
+    color: #cce6ff;
+    margin-top: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1> Dental Hygiene & Overall Wellbeing</h1>
+<p>Oral hygiene - A window to overall wellbeing</p>
+</header>
+
+<nav>
+<button onclick="showTab('basics')">Basics</button>
+<button onclick="showTab('cleaning')">Cleaning & Whitening</button>
+<button onclick="showTab('diseases')">Diseases</button>
+<button onclick="showTab('myths')">Myths</button>
+<button onclick="showTab('sources')">Sources</button>
+<button onclick="showTab('quiz')">Quiz</button>
+</nav>
+
+
+<section id="basics" class="active">
+<h2>What Is Dental Hygiene?</h2>
+
+<div class="card">
+<p>
+Dental hygiene involves keeping the teeth, gums, and mouth clean to prevent disease.
+When plaque (a sticky layer of bacteria) builds up, it can harden into tartar and
+cause serious oral and systemic health problems.
+</p>
+</div>
+
+<div class="card">
+<h3> What Is Plaque?</h3>
+<p>
+Plaque is a colorless film of bacteria that forms on teeth every day.
+If plaque is not removed through brushing and flossing, it produces acids that
+damage tooth enamel and irritate the gums.
+</p>
+</div>
+
+<div class="card">
+<h3> What Is Tartar?</h3>
+<p>
+Tartar (also called calculus) is hardened plaque. Once plaque becomes tartar,
+It cannot be removed at home and must be cleaned by a dental professional.
+</p>
+</div>
+</section>
+
+
+<section id="cleaning">
+<h2>Cleaning, Whitening & Gum Care</h2>
+
+<div class="card">
+<h3> Proper Brushing Technique</h3>
+<ul>
+<li>Brush twice a day for two minutes minimum </li>
+<li>Clean the gums gently</li>
+<li>Use gentle circular motions</li>
+<li>Do not scrub aggressively to prevent bleeding</li>
+<h3> Flossing & Gum Cleaning</h3>
+<ul>
+<li>Floss once daily to remove plaque between teeth</li>
+<li>Slide floss gently under the gumline</li>
+<li>Do not snap the floss directly into the gums</li>
+</ul>
+</div>
+
+<div class="card">
+<h3> Teeth Whitening: Safe vs Unsafe</h3>
+<ul>
+<li>Safe: Whitening fluoride toothpaste, dentist-approved whitening strips, water filter to prevent excessive hard water contact</li>
+<li>Unsafe: Citric juices, baking soda overuse, excessive hard water usage</li>
+<li>Excessive whitening can damage enamel and increase sensitivity</li>
+</ul>
+</div>
+</section>
+
+
+<section id="diseases">
+<h2>Diseases Linked to Poor Dental Hygiene</h2>
+
+<div class="card">
+<h3> Gingivitis</h3>
+<p>
+Gingivitis is the earliest stage of gum disease. Symptoms include red, swollen,
+and bleeding gums. It is reversible with proper brushing and flossing.
+</p>
+</div>
+
+<div class="card">
+<h3> Periodontitis</h3>
+<p>
+If gingivitis is left untreated, it can develop into periodontitis.
+This causes permanent damage to the gums and bone, leading to tooth loss.
+</p>
+</div>
+
+<div class="card">
+<h3> Heart Disease (Endocarditis)</h3>
+<p>
+Bacteria from infected gums can enter the bloodstream and attach to damaged
+areas of the heart, causing a serious infection known as endocarditis.
+</p>
+</div>
+
+<div class="card">
+<h3> Diabetes Complications</h3>
+<p>
+Poor oral health can make it harder to control blood sugar levels.
+At the same time, diabetes increases the risk of gum disease.
+</p>
+</div>
+
+<div class="card">
+<h3> Mental Health Effects</h3>
+<p>
+Chronic dental problems can cause pain, embarrassment, and anxiety, negatively
+affecting self-esteem and confidence (especially targeting teens/tweens) and even adults.
+</p>
+</div>
+</section>
+
+
+
+<section id="myths">
+<h2>Dental Hygiene Myths</h2>
+
+<div class="card">
+<h3>Myth 1: Sugar is the only cause of cavities</h3>
+<p>
+Fact: While sugar contributes to cavities, plaque and bacteria, poor brushing habits,
+and certain medical conditions also play a major role.
+</p>
+</div>
+
+<div class="card">
+<h3>Myth 2: Brushing harder cleans better</h3>
+<p>
+Fact: Aggressive brushing can damage enamel and gums, even causing them to bleed. Gentle circular motions are more effective and even safer. 
+</p>
+</div>
+
+<div class="card">
+<h3>Myth 3: Mouthwash can replace brushing</h3>
+<p>
+Fact: Mouthwash can help reduce bacteria, but it cannot remove plaque and food debris like brushing and flossing.
+</p>
+</div>
+</section>
+
+
+
+<section id="sources">
+<h2>Sources & References</h2>
+
+<div class="card">
+<h3>Websites</h3>
+<ul>
+<li><a href="https://www.ada.org" target="_blank">American Dental Association (ADA)</a>
+<p class="source-description">Information on plaque, tartar, and proper oral hygiene practices.</p>
+</li>
+<li><a href="https://www.mouthhealthy.org" target="_blank">MouthHealthy</a>
+<p class="source-description">Safe vs unsafe whitening methods and flossing techniques.</p>
+</li>
+<li><a href="https://www.cdc.gov/oralhealth" target="_blank">CDC Oral Health</a>
+<p class="source-description">Connection between oral health and systemic diseases like diabetes and heart disease.</p>
+</li>
+<li><a href="https://www.nhs.uk/" target="_blank">NHS: Dental Health (UK)</a>
+<p class="source-description">Brush teeth twice a day with fluoride toothpaste to prevent plaque buildup.
+
+Clean between teeth daily with floss or interdental brushes.
+
+Reduce sugar intake, avoid smoking, and limit alcohol for oral and overall health.
+
+Attend regular dental check-ups to detect problems early and help prevent diseases from worsening.</p>
+</li>
+<li><a href="https://www.aku.edu/health/Pages/default.aspx" target="_blank">Aga Khan University Hospital (Pakistan)</a>
+<p class="source-description">Oral hygiene recommendations and prevention of gum disease.</p>
+</li>
+</ul>
+</div>
+</section>
+
+
+<section id="quiz">
+<h2>Knowledge Check</h2>
+
+<div class="card">
+
+<p>1. What happens if plaque is not removed?</p>
+<input type="radio" name="q1" value="1"> It hardens into tartar<br>
+<input type="radio" name="q1" value="0"> It withers overtime<br>
+
+<p>2. Which disease is reversible?</p>
+<input type="radio" name="q2" value="1"> Gingivitis<br>
+<input type="radio" name="q2" value="0"> Periodontitis<br>
+
+<p>3. Which method is unsafe for whitening?</p>
+<input type="radio" name="q3" value="0"> Whitening toothpaste<br>
+<input type="radio" name="q3" value="1"> Citric Juicers<br>
+<input type=”radio” name=”q3”value=”0”> All of the above<br>
+
+<p>4. How does poor oral health affect diabetes?</p>
+<input type="radio" name="q4" value="1"> Makes blood sugar harder to control<br>
+<input type="radio" name="q4" value="0"> Has no effect<br>
+
+<br>
+<button class="action" onclick="checkQuiz()">Submit Quiz</button>
+<p id="result"></p>
+
+</div>
+</section>
+
+<footer>
+<p>IB Personal Project | Global Context: Identities and Relationships </p>
+</footer>
+
+<script>
+function showTab(tabId) {
+    document.querySelectorAll("section").forEach(sec =>
+        sec.classList.remove("active")
+    );
+    document.getElementById(tabId).classList.add("active");
+}
+
+// Timer
+let time = 120;
+let interval;
+
+function startTimer() {
+    clearInterval(interval);
+    time = 120;
+
+    interval = setInterval(() => {
+        let minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+        document.getElementById("timer").textContent =
+            minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+        time--;
+
+        if (time < 0) {
+            clearInterval(interval);
+            alert("Great job brushing for 2 minutes!");
+        }
+    }, 1000);
+}
+
+// Quiz
+function checkQuiz() {
+    let score = 0;
+    for (let i = 1; i <= 4; i++) {
+        let ans = document.querySelector(`input[name="q${i}"]:checked`);
+        if (ans) score += parseInt(ans.value);
+    }
+    document.getElementById("result").textContent =
+        "Your score: " + score + " / 4";
+}
+</script>
+
+</body>
+</html>
